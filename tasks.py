@@ -24,7 +24,7 @@ class StudentasLyderis(Studentas):
 
     def prideti_bonus_taskus(self, taskai):
         if taskai > 0:
-            self.bonus_taskai += taskai
+            self.bonus_taskai = taskai
         else:
             print('Iveskite teigiama skaiciu')
 
@@ -79,6 +79,9 @@ saskaita.prideti_pinigus(50)
 print(saskaita.gauti_balansa())
 # pavyzdys kad nepasiekiama
 # print(saskaita.__balansas)
+print('-'*20)
 saskaita.nuskaičiuoti_pinigus(30)
 print(saskaita.gauti_balansa())
 saskaita.nuskaičiuoti_pinigus(30)
+print('-'*40)
+

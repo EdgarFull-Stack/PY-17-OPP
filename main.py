@@ -56,7 +56,7 @@ vadovas1 = Vadovas('Jonas',' Jonaitis', 'Programuotojas', 'IT')
 vadovas1.super_change_of_atlyginmas()
 
 # AttributeError BECAUSE METHOD IS PRIVATE. COMMENT vadovas1.__reset_asmens_kodas() OR MAKE __reset_asmens_kodas NOT PRIVATE METHOD
-vadovas1.__reset_asmens_kodas()
+# vadovas1.__reset_asmens_kodas()
 
 
 print(vadovas1)
@@ -65,4 +65,4 @@ elem = Sarasas()
 elem.super_sarasas.append(vadovas1)
 
 print(elem.change_elemntu_atlyginimas())
-
+print('-'*40)
