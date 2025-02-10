@@ -26,3 +26,40 @@ darb1.atlyginimas = 5000
 atl2 = darb1.atlyginimas
 print(atl2)
 print(darb1.lytis)
+print('-'*40)
+# Example
+class Calculator:
+    @staticmethod
+    def add(num1, num2):
+        return num1 + num2
+
+    @staticmethod
+    def sub(num1, num2):
+        return num1 - num2
+a = Calculator.add(1,2)
+print(a)
+a = Calculator.sub(2,1)
+print(a)
+print('-'*40)
+# Example
+class Darbuotojas:
+    def __init__(self, vardas, pavarde, pareigos):
+        self.vardas = vardas
+        self.pavarde = pavarde
+        self.pareigos = pareigos
+
+    @classmethod
+    def sukurt_is_vienos_eilutes(cls, eilute):
+        vardas, pavarde, pareigos = eilute.split()
+        return cls(vardas, pavarde, pareigos)
+
+    def __str__(self):
+        return f'{self.vardas} {self.pavarde} Pareigos: {self.pareigos}'
+
+    def pakeisti_pareigas(self, naujos_pareigos):
+        self.pareigos = naujos_pareigos
+
+
+eilute = 'Edgar Edgar Developer'
+darbuotojas = Darbuotojas.sukurt_is_vienos_eilutes(eilute)
+print(darbuotojas)
