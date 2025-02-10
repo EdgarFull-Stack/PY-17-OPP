@@ -15,7 +15,7 @@ class Darbuotojas:
         if self.__atlyginimas >= 500:
             return self.__atlyginimas if self.__atlyginimas else 0
         else:
-            return('atlyginimas negali būti mažesnis nei minimalus')
+            return 'atlyginimas negali būti mažesnis nei minimalus'
 
     @atlyginimas.setter
     def atlyginimas(self, suma):
